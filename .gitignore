@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+venv/
+instance/
+*.log
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.cache
+.pytest_cache/
+*.mo
+*.pot
+
+# Docker
+*.pid
+*.tar
+*.bak
+*.swp
+.env
+docker-compose.override.yml
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Local build
+dist/
+build/
+.eggs/
+*.egg
