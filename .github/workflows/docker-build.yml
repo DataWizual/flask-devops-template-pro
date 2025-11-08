@@ -32,7 +32,9 @@ jobs:
 
       - name: Run tests (pytest)
         working-directory: ./app
-        run: pytest -v
+        run: |
+          export PYTHONPATH=.
+          pytest -v
 
       - name: Set version tag
         id: vars
