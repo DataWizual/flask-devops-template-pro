@@ -13,7 +13,10 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
-    
+    networks:
+      - app_default    
+      - monitoring
+          
   db:
     image: postgres:15
     restart: always
@@ -26,3 +29,8 @@ services:
 
 volumes:
   pgdata:
+
+networks:
+  app_default:
+  monitoring:
+    external: true

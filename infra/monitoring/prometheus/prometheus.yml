@@ -10,6 +10,9 @@ scrape_configs:
     static_configs:
       - targets: ["cadvisor:8080"]
 
+  - job_name: "flask_app"
+    static_configs:
+      - targets: ["web:5000"]
 
 #  - job_name: "docker"
 #    static_configs:

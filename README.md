@@ -112,6 +112,7 @@ Run the complete DevOps stack — including Flask app, Prometheus, Grafana, and 
 ./scripts/healthcheck.sh
 
 ```
+
 This script will:
 
 - automatically start any missing containers
