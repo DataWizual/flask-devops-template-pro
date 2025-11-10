@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from prometheus_flask_exporter import PrometheusMetrics
 
 
 def create_app(test_config=None):
@@ -47,7 +48,6 @@ def create_app(test_config=None):
     # the tutorial the blog will be the main index
     app.add_url_rule("/", endpoint="index")
     
-    from prometheus_flask_exporter import PrometheusMetrics
     PrometheusMetrics(app)
     
     return app
